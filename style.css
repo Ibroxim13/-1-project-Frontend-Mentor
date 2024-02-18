@@ -4,11 +4,108 @@
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-ul,li{
+ul,
+li {
     list-style-type: none;
+}
+
+body {
+    background-color: hsl(0, 0%, 8%);
+    font-family: Inter;
+}
+
+.container {
+    width: 100%;
+    max-width: 1340px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.user-card {
+    width: 400px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 12%);
+    padding: 45px;
+    text-align: center;
+}
+
+.user-card img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.user-card h1 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 8px;
+}
+
+.user-card h3 {
+    font-size: 19px;
+    color: hsl(75, 94%, 57%);
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.user-card p {
+    font-size: 16px;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 25px;
+}
+
+.user-card a span {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 20%);
+    padding: 14px;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 15px;
+    border: 0;
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+}
+
+.user-card a:last-child span {
+    margin-bottom: 0;
+}
+
+.user-card a span:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 20%);
+}
+
+@media screen and (max-width:480px) {
+    .user-card {
+        padding: 30px;
+        width: 300px;
+    }
+
+    .user-card h1 {
+        font-size: 25px;
+    }
+
+    .user-card h3 {
+        font-size: 18px;
+    }
+
+    .user-card p {
+        font-size: 14px;
+    }
+
+    .user-card a span {
+        padding: 12px;
+        font-size: 14px;
+    }
 }
